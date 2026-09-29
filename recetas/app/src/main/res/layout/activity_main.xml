@@ -1,0 +1,21 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/lab_background" tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:orientation="vertical" android:padding="28dp">
+        <ImageView android:layout_width="112dp" android:layout_height="112dp"
+            android:contentDescription="@string/lab_title" android:src="@drawable/ic_recipe" app:tint="@color/lab_primary"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:gravity="center" android:text="@string/lab_title"
+            android:textSize="32sp" android:textStyle="bold" android:textColor="@color/lab_text"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:gravity="center" android:text="@string/lab_subtitle"
+            android:textSize="17sp" android:textColor="@color/lab_muted"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/enter_button"
+            android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="32dp" android:text="@string/lab_enter"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:gravity="center" android:text="@string/lab_data_source" android:textSize="12sp" android:textColor="@color/lab_muted"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="48dp" android:gravity="center" android:text="@string/lab_author" android:textSize="14sp" android:textColor="@color/lab_muted"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/groupsFragment" android:title="@string/lab_groups" android:icon="@drawable/ic_catalog"/>
+    <item android:id="@+id/listFragment" android:title="@string/lab_list" android:icon="@drawable/ic_people"/>
+    <item android:id="@+id/detailFragment" android:title="@string/lab_detail" android:icon="@drawable/ic_detail"/>
+</menu>

@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    android:padding="16dp" tools:context=".GroupsFragment">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/lab_groups" android:textSize="26sp" android:textStyle="bold" android:textColor="@color/lab_text"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="Selecciona una opción para consultar su lista" android:textColor="@color/lab_muted"/>
+    <com.google.android.material.button.MaterialButton android:id="@+id/reload_button" style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lab_reload"/>
+    <ProgressBar android:id="@+id/progress" android:layout_width="32dp" android:layout_height="32dp"
+        android:layout_gravity="center_horizontal" android:visibility="gone"/>
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingBottom="8dp" android:textColor="@color/lab_muted"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" tools:listitem="@layout/item_card"/>
+</LinearLayout>

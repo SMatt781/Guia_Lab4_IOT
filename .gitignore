@@ -1,0 +1,18 @@
+# Salidas de compilación y cachés de los tres proyectos Android
+**/build/
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/.cxx/
+**/.externalNativeBuild/
+**/captures/
+*.iml
+
+# Configuración de cada computadora y claves de firma
+**/local.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+.DS_Store
+Thumbs.db

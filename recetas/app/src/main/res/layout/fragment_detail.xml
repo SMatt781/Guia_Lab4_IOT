@@ -1,0 +1,30 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" tools:context=".DetailFragment">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/lab_detail" android:textSize="26sp" android:textStyle="bold" android:textColor="@color/lab_text"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/lab_detail_help" android:textColor="@color/lab_muted"/>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/id_layout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/lab_id">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/id_input"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/search_button"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lab_search"/>
+        <ProgressBar android:id="@+id/progress" android:layout_width="32dp" android:layout_height="32dp"
+            android:layout_gravity="center_horizontal" android:visibility="gone"/>
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/lab_muted"/>
+        <ImageView android:id="@+id/photo" android:layout_width="match_parent" android:layout_height="200dp"
+            android:layout_marginTop="12dp" android:background="@drawable/image_placeholder" android:contentDescription="@string/lab_detail" android:scaleType="centerCrop"/>
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/lab_text"/>
+        <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:textSize="15sp" android:textColor="@color/lab_primary"/>
+        <TextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:lineSpacingExtra="4dp" android:textSize="16sp" android:textColor="@color/lab_text"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:text="@string/lab_data_source" android:textSize="12sp" android:textColor="@color/lab_muted"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
